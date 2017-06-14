@@ -1,0 +1,59 @@
+<h2 class="page-header">Register</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/users/register">
+   <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="Name" name="name">
+  </div>
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username">
+  </div>
+   <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="Email" name="email">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password">
+  </div>
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password2">
+  </div>
+  <div class="checkbox">
+  <label><input type="checkbox" value="" name="checkbox"><h4>I have read and I agree to the HAWC Waiver below</h4</label>
+</div>
+  <button type="submit" class="btn btn-default">Submit</button>
+
+  <br>
+  <h1 style="padding-bottom: 45px;">Cleveland Center Health &amp Wellness Center Waiver</h1>
+  <p id="hawctext"><strong>
+  The Cleveland Center Wellness Association is a voluntary organization whose goal is to imporove the physical and mental health and welfare of the employees of Cleveland ARTCC. The association has been granted space for a Wellness Center work-out area. Use of the equipment in the Cneter is limited to members of the Association who have signed this agreement and have paid the annual fee.</p>
+  
+  <p id="hawctext">Members of the Association agree to abide by the rules and limitations of the Association listed below.  Failure to abide by these rules swhall result in forfeiture of the rightsw to use an and all equipment in the Wellness Center.</p>
+  <br><br>
+  <div class="col-md-2"></div>
+  <div class="col-md-12">
+  <ol>
+    <li>The annual fee for membership in the Wellness Association is $100.00, payable in January of each year. Use of the membership fee shall be governed by the Wellness Committee and shall be governed by the equipment, or for other wellness activites.  Members whose renewal fees are more than 30 days in arrears shall be terminated from the Association. Annual fee subject to change with advance notice to members.</li><br>
+    <li>Use of the Wellness Center shall be limited to employees of Cleveland ARTCC only. Family members and friends are not authorized to use the Wellness Center at any time.</li><br>
+    <li>Unless specifically authorized or in the event of an emergency, employees are not allowed down the stairs intothe old control room, or any other area designated as off-limits</li><br>
+    <li>Members shall use work-out equipment for its designed purpose and shall not abuse equipment in any manner that may lead to damage of the equipment or endanger other persons or property.</li><br>
+    <li>Members shall use good judgment and courtesy in their personal hygiene either in the Wellness Center or in their working areas. Please wipe down any moisture left on the equipment after use.</li><br>
+    <li>Members shall not bring any food items into the Wellness Center. Please ensure that the beferages are handled in a manner that does not result in spillage.</li><br>
+    <li>Donations or loaning of equipment is greatly appreciated. Any equipment brought in for use in the Center shall only be done after prior approval of the Wellness Committee. Under no circumstances shall members move or relocate any equipment or otherwise alter the layout of the Wellness Center.</li><br>
+    <li>Radios or other audio equipment shall not be played at a level that prevents others from hearing the public address system.</li><br>
+    <li><i id="itals">Agreeing to the use of ZOB Wellness Center will be at your own risk.</i> Further, this agreement, <i id="itals">your</i> heirs, executors and administrators, waive and release any and all claims or damages whatsoever that <i id="itals">you</i> or <i id="itals">your</i> representative may have, or hereafter may accrue, against Cleveland Center, arising from or incident to the use of the Wellness Center.</li><br>
+    <li>The Wellness Committee strongly recommends that employees consult with their family  physician before beginning any exercise program. With my <i id="itals">signature below</i>, I attest and verify that I am physically able to take part in the Cleveland Center Wellness Center activities. I have read the entire above conditions and accept as shown by my <i id="itals">signature. </i></li><br>
+    </ol>
+    
+
+  </div>
+  <div class="col-md-8"></div>
+
+</form>
