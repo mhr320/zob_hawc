@@ -28,7 +28,7 @@ $ npm start
 
 
 TODO: 
-- setup email
+- setup email, consider NODEMAILER from npm
 - when user digitally signs waiver, send email to user,admin email
 	* consider parsing waiver with signature into pdf file for email
 - add remove user from database 
