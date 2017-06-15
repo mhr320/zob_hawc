@@ -16,11 +16,6 @@ router.get('/register', function(req, res){
 	res.render('register');
 });
 
-// Register
-router.get('/hawcWaiver', function(req, res){
-	res.render('hawcWaiver');
-});
-
 // Help
 router.get('/help', function(req, res){
 	res.render('help');
