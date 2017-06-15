@@ -33,3 +33,4 @@ TODO:
 	* consider parsing waiver with signature into pdf file for email
 - add remove user from database 
 - add dynamic page for user portal
+- migrate natcazob.org as landing page with links to HAWC loginapp
