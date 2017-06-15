@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
@@ -108,7 +109,8 @@ router.post('/login',
   passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
   function(req, res) {
     //newcode should send username to the view, added for testing. View for dashboard also changed
-    res.render('/',{name : username}); 
+    res.render('/',{name : "dakota"});
+
     //newcode
     //res.redirect('/');
   });
