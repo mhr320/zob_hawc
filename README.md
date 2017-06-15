@@ -28,9 +28,7 @@ $ npm start
 
 
 TODO: 
-- Fix "Checkbox" validation on registration page. Not currently validating
-	* is tied to routes/user.js where validation occurs
-	* setup email
-	* when user digitally signs waiver, send email to user,admin email
-		* consider parsing waiver with signature into pdf file for email
+- setup email
+- when user digitally signs waiver, send email to user,admin email
+	* consider parsing waiver with signature into pdf file for email
 
