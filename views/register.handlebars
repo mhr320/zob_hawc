@@ -6,7 +6,7 @@
 {{/if}}
 <form method="post" action="/users/register">
    <div class="form-group">
-    <label>Name</label>
+    <label>First &amp Last Name</label>
     <input type="text" class="form-control" placeholder="Name" name="name">
   </div>
   <div class="form-group">
@@ -26,7 +26,10 @@
     <input type="password" class="form-control" placeholder="Password" name="password2">
   </div>
 </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  
+  <div class="alert alert-info">
+  <strong>HAWC Waiver! </strong> You must sign waiver at bottom of page before submitting! <button type="submit" class="btn btn-default">Submit</button>
+</div>
 
   <br>
   <h1 style="padding-bottom: 45px;">Cleveland Center Health &amp Wellness Center Waiver</h1>
@@ -50,8 +53,8 @@
     <li>The Wellness Committee strongly recommends that employees consult with their family  physician before beginning any exercise program. With my <i id="itals">signature below</i>, I attest and verify that I am physically able to take part in the Cleveland Center Wellness Center activities. I have read the entire above conditions and accept as shown by my <i id="itals">signature. </i></li><br>
     </ol>
     <div class="form-group">
-    <label>Type your name to digitally sign</label>
-    <input type="text" class="form-control" placeholder="Must match your Name above" name="name2">
+    <label>Type your First &amp Last Name to digitally sign</label>
+    <input type="text" class="form-control" placeholder="Must match your First &amp Last Name above" name="name2">
   </div>
     
 
