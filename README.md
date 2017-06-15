@@ -32,4 +32,4 @@ TODO:
 - when user digitally signs waiver, send email to user,admin email
 	* consider parsing waiver with signature into pdf file for email
 - add remove user from database 
-
+- add dynamic page for user portal
