@@ -6,6 +6,12 @@ var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
 
 // Register
+router.get('/natcazobindex', function(req, res){
+	res.render('natcazobindex');
+});
+
+
+// Register
 router.get('/register', function(req, res){
 	res.render('register');
 });
