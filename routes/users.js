@@ -17,11 +17,6 @@ router.get('/register', function(req, res){
 	res.render('register');
 });
 
-// Register
-router.get('/hawcWaiver', function(req, res){
-	res.render('hawcWaiver');
-});
-
 // Help
 router.get('/help', function(req, res){
 	res.render('help');
@@ -108,11 +103,15 @@ passport.deserializeUser(function(id, done) {
 router.post('/login',
   passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
   function(req, res) {
+<<<<<<< HEAD
     //newcode should send username to the view, added for testing. View for dashboard also changed
     res.render('/',{name : "dakota"});
 
     //newcode
     //res.redirect('/');
+=======
+	res.redirect('/');
+>>>>>>> 4b74a6a0bc4c7f22ea93508d69d880f1626d9c9b
   });
 
 router.get('/logout', function(req, res){
