@@ -78,6 +78,10 @@ body {
   }
 }
 
+#helphead {
+  color: blue;
+}
+
 .page-header{
   margin-top:0;
 }

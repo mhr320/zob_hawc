@@ -32,7 +32,7 @@ router.post('/register', function(req, res){
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-	var checkbox = req.body.checkbox; //not working, can't find correct function
+	var name2 = req.body.name2; 
 
 	// Validation
 	req.checkBody('name', 'Name is required').notEmpty();
@@ -41,7 +41,7 @@ router.post('/register', function(req, res){
 	req.checkBody('username', 'Username is required').notEmpty();
 	req.checkBody('password', 'Password is required').notEmpty();
 	req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
-	req.checkBody('checkbox', 'You must agree to the HAWC Waiver').isEmpty();//not working can't find correct function, isEmpty() is not a function
+	req.checkBody('name2', 'HAWC Waiver not signed (Bottom of page)').equals(req.body.name);
 
 	var errors = req.validationErrors();
 
