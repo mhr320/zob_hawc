@@ -102,10 +102,7 @@ passport.deserializeUser(function(id, done) {
 router.post('/login',
   passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
   function(req, res) {
-    //newcode should send username to the view, added for testing. View for dashboard also changed
-    res.render('/',{name : username}); 
-    //newcode
-    //res.redirect('/');
+	res.redirect('/');
   });
 
 router.get('/logout', function(req, res){
