@@ -6,11 +6,10 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('../models/user');
 
-// Register
+// Natca Zob Index
 router.get('/natcazobindex', function(req, res){
 	res.render('natcazobindex');
 });
-
 
 // Register
 router.get('/register', function(req, res){
@@ -52,6 +51,7 @@ router.post('/register', function(req, res){
 			errors:errors
 		});
 	} else {
+		//New User Pass through to model/user.js
 		var newUser = new User({
 			name: name,
 			email: email,
@@ -103,15 +103,9 @@ passport.deserializeUser(function(id, done) {
 router.post('/login',
   passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
   function(req, res) {
-<<<<<<< HEAD
-    //newcode should send username to the view, added for testing. View for dashboard also changed
-    res.render('/',{name : "dakota"});
-
-    //newcode
-    //res.redirect('/');
-=======
-	res.redirect('/');
->>>>>>> 4b74a6a0bc4c7f22ea93508d69d880f1626d9c9b
+	//Added render here and in index.js for testing.
+	res.render('index',{name : username})
+	//res.redirect('/');
   });
 
 router.get('/logout', function(req, res){

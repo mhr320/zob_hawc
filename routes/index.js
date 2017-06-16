@@ -3,7 +3,9 @@ var router = express.Router();
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
-	res.render('index');
+    //Added render here and in index.js for testing.
+    res.render('index',{name : username})
+	//res.render('index');
 });
 
 function ensureAuthenticated(req, res, next){
